@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assets/fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assets/fonts/Roboto/);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url(/assets/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url(/assets/fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf);
+    font-weight: bold;
+}
+
+
+/*Начало блок меню */
+
+.nav-link {
+    text-decoration: none;
+    color: #001e64;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #232222;
+}
+
+.navbar {
+    margin-top: -10px;
+    background-color: #23222200;
+    z-index: 1;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 9px;
+}
+
+.navbar-logo {
+    margin-top: 3%;
+}
+
+.navbar-phone:hover {
+    transform: scale(1.5);
+}
+
+/*Конец блок меню */
+
+/*Начало блок главная */
+
+.home {
+    background: url("/assets/img/ocean.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    margin-top: -4%;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 16%;
+    margin-top: 15%;
+
+}
+
+.arrow {
+    cursor: pointer;
+    user-select: none;
+    margin: 10px 0;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    cursor: pointer;
+    font-size: 25px;
+    color: #FFFFFF;
+    opacity: 50%;
+    text-align: center;
+    margin: 10px 0;
+    user-select: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.dot.active {
+    color: rgb(255, 255, 255);
+    opacity: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-wrapper h2{
+    font-family: 'RobotoSlab';
+    font-weight: 700;
+    font-size: 72px;
+    color: #001E64;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.slides {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 18%;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.select-btn {
+    margin-top: 10vw;
+    padding: 12px 90px;
+    font-size: 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d3d3d381;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'RobotoSlab';
+    font-weight: 700;
+    margin-left: 2%;
+    margin-top: 15%;
+
+}
+
+.select-btn:hover {
+    background-color: #fff;
+    color: #001E64;
+}
+
+.language-switcher {
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin-top: 35%;
+    margin-left: 4%;
+}
+
+.language-switcher:hover {
+    color: #272727;
+}
+/*Конец блок главная */
+
+
+
+
+
+
+/* Начало блок слайдера с ассортиментом */
+
+.slider-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow img {
+    width: 20px;
+    height: auto;
+}
+
+.dots-range {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dot-range {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+}
+
+.dot-range.active {
+    color: #0056b3;
+}
+
+.crab-info {
+    padding: 20px;
+    max-width: 700px;
+    color: #001E64;
+}
+
+.crab-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.crab-details {
+    margin-left: 20px;
+}
+
+.crab-title {
+    font-size: 24px;
+    color: #001E64;
+}
+
+.crab-text p {
+    line-height: 1.5;
+    margin-top: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+
+.order-button {
+    color: #001E64;
+    padding: 10px 80px;
+    border: 1px solid #001E64;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #fff;
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+}
+
+.order-button:hover {
+    background-color: #001E64;
+    color: #fff;
+}
+
+
+/* Конец блока слайдера с ассортиментом */
+
+
+
+/* Блок с ракушками почему мы начало */
+.ocean-container {
+    background-image: url('/assets/img/back.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+}
+
+.shell-item {
+    margin-bottom: 20px;
+}
+
+.shell-icon {
+    width: 180px;
+    height: 165px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shell-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/img/shell_icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.shell-icon p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.ocean-container {
+    background-image: url('/assets/img/back.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.shell-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.shell-icon {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shell-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/img/shell_icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.shell-icon p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    margin: 0;
+}
+
+/* Блок с ракушками почему мы начало */
+
+/*Блок морепродукты начало*/
+
+.spacer {
+    margin-top: 100px;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.text-centered {
+    text-align: center;
+}
+
+/*Блок морепродукты конец*/
+
+
+/*Футер начало*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px; 
+    transition: fill 0.3s ease;
+    fill: #000; 
+}
+.social-icon:hover {
+    fill: #001E64; }
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: #001E64;
+}
+.logo-footer {
+    margin: 6px 0; 
+}
+.logo-footer img {
+    max-width: 120px; 
+    margin-top: -45px; 
+}
+
+/*Футер конец*/
